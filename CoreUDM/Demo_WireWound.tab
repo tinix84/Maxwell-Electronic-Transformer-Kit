@@ -1,0 +1,29 @@
+15			%Segmentation Angle: should be between 0 to 20
+mm			%Model Units: mm or inches
+Ferroxcube			%Supplier Name
+RM			%Core Type
+28.5	21.2	10.9	18.6	12.4	0.0	24.7	13.5			%CoreDimensions: D1,D2,D3,D4,D5,D6,D7,D8
+1			%Include Airgap: 0 to exclude, 1 for Airgap on central leg, 2 for Side leg, 3 for both
+1			% Airgap Value
+1			%Winding Status: 1 for Create Winding, 0 for exclude winding
+3			%Number of Layers
+.1	.1	.1	1			%Margin Dimensions (Top Margin, Side Margin, Layer Spacing, Bobbin Thickness)
+1			%Bobbin Status 0:Exclude bobbin from Geometry 1:Include Bobbin in Geometry
+2			%Winding Type 1:TopDown 2:Concentric
+2			%Conductor Type 1:Rectangular 2:Circular
+1	9	0.05	8			%Layer 1 specifications :Conductor Diameter, Number of Turns, Insulation Thickness, Number of Segments
+1	9	.05	8			%Layer 2 specifications :Conductor Diameter, Number of Turns, Insulation Thickness, Number of Segments
+1	9	.05	8			%Layer 3 specifications :Conductor Diameter, Number of Turns, Insulation Thickness, Number of Segments
+1			%Setup Defined: 0 for No, 1 for Define setup
+3C15	copper			% Core Material and Coil Material
+2			%Layers Defined as Primary
+1	3			%Layers Defined as Secondary
+2			%No. of Winding Groups Defined: 0 for no definition
+pri	2			% Group Name followed by Layers in Group
+1			% No. of Parallel branches in Group
+sec	1	3			% Group Name followed by Layers in Group
+2			% No. of Parallel branches in Group
+100kHz			%Adaptive Frequency
+2			%Frequency Sweep Defined: 0 for No Sweep, 1 for Linear Sweep, 2 for Logarithmic Sweep
+1kHz	1MHz	1			%Sweep Definition: Start Frequency, Stop Frequency and Count/Samples
+5	1			%Solution Setup:Maximum No. of Passes and Percentage Error

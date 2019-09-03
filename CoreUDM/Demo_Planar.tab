@@ -1,0 +1,33 @@
+15			%Segmentation Angle: should be between 0 to 20
+mm			%Model Units: mm or inches
+Phillips			%Supplier Name
+EI			%Core Type
+64.0	53.8	10.2	10.2	5.1	50.8	0.64	5.08			%CoreDimensions: D1,D2,D3,D4,D5,D6,D7,D8
+0			%Include Airgap: 0 to exclude, 1 for Airgap on central leg, 2 for Side leg, 3 for both
+1			%Winding Status: 1 for Create Winding, 0 for exclude winding
+8			%Number of Layers
+0.2	0.1	0.2	0			%Margin Dimensions (Top Margin, Side Margin, Layer Spacing, Bobbin Thickness)
+0			%Bobbin Status 0:Exclude bobbin from Geometry 1:Include Bobbin in Geometry
+1			%Winding Type 1:TopDown 2:Concentric
+1			%Conductor Type 1:Rectangular 2:Circular
+21.2	0.25	1	0.05			%Layer 1 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+21.2	0.25	1	0.05			%Layer 2 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+7	0.25	3	0.05			%Layer 3 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+7	0.25	3	0.05			%Layer 4 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+7	0.25	3	0.05			%Layer 5 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+7	0.25	3	0.05			%Layer 6 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+21.2	0.25	1	0.05			%Layer 7 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+21.2	0.25	1	0.05			%Layer 8 specifications :Conductor Width, Conductor Height, Number of Turns, Insulation Thickness
+1			%Setup Defined: 0 for No, 1 for Define setup
+3C15	copper			% Core Material and Coil Material
+1	2	3	4			%Layers Defined as Primary
+5	6	7	8			%Layers Defined as Secondary
+2			%No. of Winding Groups Defined: 0 for no definition
+Primary	1	2	3	4			% Group Name followed by Layers in Group
+1			% No. of Parallel branches in Group
+Secondary	5	6	7	8			% Group Name followed by Layers in Group
+1			% No. of Parallel branches in Group
+100kHz			%Adaptive Frequency
+2			%Frequency Sweep Defined: 0 for No Sweep, 1 for Linear Sweep, 2 for Logarithmic Sweep
+1kHz	1MHz	3			%Sweep Definition: Start Frequency, Stop Frequency and Count/Samples
+5	1			%Solution Setup:Maximum No. of Passes and Percentage Error
